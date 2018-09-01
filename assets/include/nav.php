@@ -47,7 +47,7 @@
                     <a href="#" class="dropdown-item notify-item">
                         <p class="notify-details ml-0">
                             <b>Jokn Doe</b>
-                            <span>New message received</span>
+                            <span>Nouveau message</span>
                             <small class="text-muted">2 minutes ago</small>
                         </p>
                     </a>
@@ -76,7 +76,6 @@
                             <small class="text-muted">3 minutes ago</small>
                         </p>
                     </a>
-
                 </div>
             </li>
 
@@ -87,7 +86,7 @@
                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                     <!-- item-->
                     <div class="dropdown-item noti-title">
-                        <h5 class="text-overflow"><small>Hello, admin</small> </h5>
+                        <h5 class="text-overflow"><small>Bonjour, admin</small> </h5>
                     </div>
 
                     <!-- item-->
@@ -97,13 +96,9 @@
 
                     <!-- item-->
                     <a href="#" class="dropdown-item notify-item">
-                        <i class="fa fa-power-off"></i> <span>Logout</span>
+                        <i class="fa fa-power-off"></i> <span>Déconnexion</span>
                     </a>
 
-                    <!-- item-->
-                    <a target="_blank" href="https://www.pikeadmin.com" class="dropdown-item notify-item">
-                        <i class="fa fa-external-link"></i> <span>Pike Admin</span>
-                    </a>
                 </div>
             </li>
 
@@ -131,14 +126,14 @@
             <ul>
 
                 <li class="submenu">
-                    <a class="active" href="index.php"><i class="fa fa-fw fa-bars"></i><span> Dashboard </span> </a>
+                    <a class="active" href="index.php"><i class="fa fa-fw fa-bars"></i><span> Administration </span> </a>
                 </li>
 
                 <li class="submenu">
-                    <a class="pro" href="#"><i class="fa fa-fw fa-star"></i><span> Pike Admin PRO </span> <span class="menu-arrow"></span></a>
+                    <a class="pro" href="#"><i class="fa fa-fw fa-star"></i><span> Gestion utilisateur </span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled">
-                        <li><a href="pro-profile.php">My Profile</a></li>
-                        <li><a href="pro-users.php">Users</a></li>
+                        <li><a href="pro-profile.php">Mon Profile</a></li>
+                        <li><a href="pro-users.php">Utilisateurs</a></li>
                     </ul>
                 </li>
 

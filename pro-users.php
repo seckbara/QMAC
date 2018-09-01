@@ -14,10 +14,10 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="breadcrumb-holder">
-                            <h1 class="main-title float-left">Users</h1>
+                            <h1 class="main-title float-left">Utilisateurs</h1>
                             <ol class="breadcrumb float-right">
-                                <li class="breadcrumb-item">Home</li>
-                                <li class="breadcrumb-item active">Users</li>
+                                <li class="breadcrumb-item">Accueil</li>
+                                <li class="breadcrumb-item active">Utilisateurs</li>
                             </ol>
                             <div class="clearfix"></div>
                         </div>
@@ -32,7 +32,7 @@
                         <div class="card mb-3">
 
                             <div class="card-header">
-                                <span class="pull-right"><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal_add_user"><i class="fa fa-user-plus" aria-hidden="true"></i> Add new user</button></span>
+                                <span class="pull-right"><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal_add_user"><i class="fa fa-user-plus" aria-hidden="true"></i> Ajouter un utilisateur</button></span>
                                 <div class="modal fade custom-modal" tabindex="-1" role="dialog" aria-labelledby="modal_add_user" aria-hidden="true" id="modal_add_user">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
@@ -41,7 +41,7 @@
 
 
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title">Add new user</h5>
+                                                    <h5 class="modal-title">Ajouter un nouveau utilisateur</h5>
                                                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                                                 </div>
 

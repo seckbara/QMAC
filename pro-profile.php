@@ -15,9 +15,9 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="breadcrumb-holder">
-                                <h1 class="main-title float-left">My Profile</h1>
+                                <h1 class="main-title float-left">Mon Profile</h1>
                                 <ol class="breadcrumb float-right">
-                                    <li class="breadcrumb-item">Home</li>
+                                    <li class="breadcrumb-item">Accueil</li>
                                     <li class="breadcrumb-item active">Profile</li>
                                 </ol>
                                 <div class="clearfix"></div>
@@ -30,7 +30,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="card mb-3">
                                 <div class="card-header">
-                                    <h3><i class="fa fa-user"></i> Profile details</h3>
+                                    <h3><i class="fa fa-user"></i> Details du Profile</h3>
                                 </div>
 
                                 <div class="card-body">
@@ -76,7 +76,7 @@
 
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <button type="button" class="btn btn-primary">Edit profile</button>
+                                                        <button type="button" class="btn btn-primary">Editer mon profile</button>
                                                     </div>
                                                 </div>
 
@@ -95,7 +95,7 @@
                                                 <div id="avatar_image">
                                                     <img alt="image" style="max-width:100px; height:auto;" src="assets/images/avatars/admin.png" />
                                                     <br />
-                                                    <i class="fa fa-trash-o fa-fw"></i> <a class="delete_image" href="#">Remove avatar</a>
+                                                    <i class="fa fa-trash-o fa-fw"></i> <a class="delete_image" href="#">Supprimer mon avatar</a>
 
                                                 </div>
                                                 <div id="image_deleted_text"></div>
@@ -104,7 +104,7 @@
                                                 <div class="m-b-10"></div>
 
                                                 <div class="form-group">
-                                                    <label>Change avatar</label>
+                                                    <label>Changer mon avatar</label>
                                                     <input type="file" name="image" class="form-control">
                                                 </div>
 
