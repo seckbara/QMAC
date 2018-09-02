@@ -21,6 +21,10 @@ class ComposerStaticInit28bb88fbc0db226f789867e19aed362b
         array (
             'Psr\\Log\\' => 8,
         ),
+        'G' => 
+        array (
+            'GestionUser\\' => 12,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -47,6 +51,10 @@ class ComposerStaticInit28bb88fbc0db226f789867e19aed362b
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'GestionUser\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

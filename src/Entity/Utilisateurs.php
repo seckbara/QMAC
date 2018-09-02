@@ -2,12 +2,12 @@
 
 namespace GestionUser\Entity;
 use Doctrine\ORM\Mapping as ORM;
-
+use GestionUser\Entity\InterfaceUsers;
 /**
  * @ORM\Entity
  * @ORM\Table(name="utilisateurs")
  */
-class Utilisateurs implements \InterfaceUsers
+class Utilisateurs implements InterfaceUsers
 {
     /**
      * @ORM\Id
@@ -37,7 +37,7 @@ class Utilisateurs implements \InterfaceUsers
     private $role;
 
     /**
-     * @ORM\Column(type="date")
+     * @ORM\Column(type="string")
      */
     private $dateinsciprtion;
 

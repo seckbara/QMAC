@@ -1,13 +1,11 @@
 
-<?php include "assets/include/header.php"; ?>
+<?php include "../assets/include/header.php"; ?>
 
 <div id="main">
 
-    <?php include "assets/include/nav.php"; ?>
-    <!-- contenu de la page -->
-    <div class="content-page">
+    <?php include "../assets/include/nav.php"; ?>
+        <div class="content-page">
 
-        <!-- Start content -->
         <div class="content">
 
             <div class="container-fluid">
@@ -26,6 +24,14 @@
                     </div>
                 </div>
                 <!-- end row -->
+
+                <div class="alert alert-success" style="display: none" id="succes" role="alert">
+
+                </div>
+
+                <div class="alert alert-danger" style="display: none" id="error" role="alert">
+
+                </div>
 
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -63,7 +69,11 @@
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>Rôle</label>
-                                                        <input class="form-control" id="id-role" name="role" type="text" />
+                                                        <select class="form-control select2" id="id-role" name="role">
+                                                            <option value="adminitrateur">Administrateur</option>
+                                                            <option value="consultant">Consultation</option>
+                                                            <option value="invite">invité</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -73,14 +83,17 @@
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>Date d'inscription</label>
-                                                        <input class="form-control" id="id-date" name="date" type="date" value="" />
+                                                        <input class="form-control" id="id-date" name="date" type="text" value="" />
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>Sexe</label>
-                                                        <input class="form-control" id="id-sexe" name="sexe" type="text" />
+                                                        <select class="form-control select2" id="id-sexe" name="sexe">
+                                                            <option value="H">Homme</option>
+                                                            <option value="F">Femme</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -105,7 +118,12 @@
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>Fonction</label>
-                                                        <input class="form-control" id="id-fonction" name="fonction" type="text" value="" />
+                                                        <select class="form-control select2" id="id-fonction" name="fonction">
+                                                            <option value="developpeur">Développeur</option>
+                                                            <option value="testeur">Testeur</option>
+                                                            <option value="chef">Chef de projet</option>
+                                                            <option value="manager">Manager</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -134,18 +152,35 @@
         </div>
     </div>
 
-    <?php include "assets/include/footer.php"; ?>
+    <?php include "../assets/include/footer.php"; ?>
 
 </div>
 
-<?php include "assets/include/script.php"; ?>
+<?php include "../assets/include/script.php"; ?>
 <script>
+
     $("#id-enregistrer" ).click(function() {
-        $.post( "src/Traitement/create-user-form.php", { name: "John", time: "2pm" })
-            .done(function( data ) {
-                alert( "Data Loaded: " + data );
-            });
+        $.post( "../src/Traitement/create-user-form.php", $("#create-user").serialize(), function (data) {
+            if(data['result'] === "succes"){
+                $("#succes").html(" L'utilisateur a été créer avec succé").show();
+                $("#error").html("Les mots de passe ne sont pas identique").hide();
+                setTimeout(function() { window.location.reload() },5000);
+            }
+            else{
+                $("#error").html("Les mots de passe ne sont pas identique").show();
+                $("#succes").html(" L'utilisateur a été créer avec succé").hide();
+            }
+        }, 'json');
     });
+
+    $('input[name="date"]').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true,
+        locale: {
+            format: 'DD-MM-YYYY'
+        }
+    });
+
 </script>
 
 

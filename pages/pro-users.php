@@ -1,12 +1,10 @@
-<?php include "assets/include/header.php"; ?>
+<?php include "../assets/include/header.php"; ?>
 
 <div id="main">
-    <?php include "assets/include/nav.php"; ?>
-        <!-- contenu de la page -->
+    <?php include "../assets/include/nav.php"; ?>
             <div class="content-page">
 
-        <!-- Start content -->
-        <div class="content">
+                <div class="content">
 
             <div class="container-fluid">
 
@@ -165,7 +163,7 @@
                                                 5							</th>
 
                                             <td>
-                                                <span style="float: left; margin-right:10px;"><img alt="image" style="max-width:40px; height:auto;" src="assets/images/avatars/avatar1.png" /></span>
+                                                <span style="float: left; margin-right:10px;"><img alt="image" style="max-width:40px; height:auto;" src="../assets/images/avatars/avatar1.png" /></span>
                                                 <strong>Gabriel Gaby</strong>							<br />
                                                 <small>webmaster@website.com</small>
                                             </td>
@@ -301,7 +299,7 @@
                                                 4							</th>
 
                                             <td>
-                                                <span style="float: left; margin-right:10px;"><img alt="image" style="max-width:40px; height:auto;" src="assets/images/avatars/avatar2.png" /></span>
+                                                <span style="float: left; margin-right:10px;"><img alt="image" style="max-width:40px; height:auto;" src="../assets/images/avatars/avatar2.png" /></span>
                                                 <strong>Test Author</strong>							<br />
                                                 <small>user@website.com</small>
                                             </td>
@@ -437,7 +435,7 @@
                                                 2							</th>
 
                                             <td>
-                                                <span style="float: left; margin-right:10px;"><img alt="image" style="max-width:40px; height:auto;" src="assets/images/avatars/avatar3.png" /></span>
+                                                <span style="float: left; margin-right:10px;"><img alt="image" style="max-width:40px; height:auto;" src="../assets/images/avatars/avatar3.png" /></span>
                                                 <strong>Test Manager</strong>							<br />
                                                 <small>manager@website.com</small>
                                             </td>
@@ -573,7 +571,7 @@
                                                 1							</th>
 
                                             <td>
-                                                <span style="float: left; margin-right:10px;"><img alt="image" style="max-width:40px; height:auto;" src="assets/images/avatars/avatar4.png" /></span>
+                                                <span style="float: left; margin-right:10px;"><img alt="image" style="max-width:40px; height:auto;" src="../assets/images/avatars/avatar4.png" /></span>
                                                 <strong>Pike Admin</strong>							<br />
                                                 <small>demo@pikephp.com</small>
                                             </td>
@@ -725,13 +723,9 @@
             <!-- END container-fluid -->
 
         </div>
-        <!-- END content -->
 
-    </div>
-        <!-- fin contenu de la page -->
-
-    <?php include "assets/include/footer.php"; ?>
+            </div>
+    <?php include "../assets/include/footer.php"; ?>
 
 </div>
-<!-- END main -->
-<?php include "assets/include/script.php"; ?>
+<?php include "../assets/include/script.php"; ?>

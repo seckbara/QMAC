@@ -1,15 +1,11 @@
-<?php include "assets/include/header.php"; ?>
+        <?php include "../assets/include/header.php"; ?>
 
-    <div id="main">
+        <div id="main">
 
-        <?php include "assets/include/nav.php"; ?>
-            <!-- contenu de la page -->
+            <?php include "../assets/include/nav.php"; ?>
                 <div class="content-page">
-
-            <!-- Start content -->
-            <div class="content">
-
-                <div class="container-fluid">
+                    <div class="content">
+                        <div class="container-fluid">
 
 
                     <div class="row">
@@ -93,7 +89,7 @@
                                                 <div class="m-b-10"></div>
 
                                                 <div id="avatar_image">
-                                                    <img alt="image" style="max-width:100px; height:auto;" src="assets/images/avatars/admin.png" />
+                                                    <img alt="image" style="max-width:100px; height:auto;" src="../assets/images/avatars/admin.png" />
                                                     <br />
                                                     <i class="fa fa-trash-o fa-fw"></i> <a class="delete_image" href="#">Supprimer mon avatar</a>
 
@@ -110,33 +106,17 @@
 
                                             </div>
                                         </div>
-
                                     </form>
-
                                 </div>
-                                <!-- end card-body -->
-
                             </div>
-                            <!-- end card -->
-
                         </div>
-                        <!-- end col -->
-
                     </div>
-                    <!-- end row -->
-
-
                 </div>
-                <!-- END container-fluid -->
-
-            </div>
-            <!-- END content -->
+                    </div>
+                </div>
+            <?php include "../assets/include/footer.php"; ?>
 
         </div>
-            <!-- fin contenu de la page -->
-        <?php include "assets/include/footer.php"; ?>
 
-    </div>
-
-<?php include "assets/include/script.php"; ?>
+        <?php include "../assets/include/script.php"; ?>
 

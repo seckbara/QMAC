@@ -1,11 +1,9 @@
 <?php ?>
 
-<!-- top bar navigation -->
 <div class="headerbar">
 
-    <!-- LOGO -->
     <div class="headerbar-left">
-        <a href="index.php" class="logo"><img alt="Logo" src="assets/images/logo.png" /> <span>QMAC</span></a>
+        <a href="../index.php" class="logo"><img alt="Logo" src="../assets/images/logo.png" /> <span>QMAC</span></a>
     </div>
 
     <nav class="navbar-custom">
@@ -14,41 +12,18 @@
 
             <li class="list-inline-item dropdown notif">
                 <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <i class="fa fa-fw fa-question-circle"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-arrow-success dropdown-lg">
-                    <!-- item-->
-                    <div class="dropdown-item noti-title">
-                        <h5><small>Help and Support</small></h5>
-                    </div>
-
-                    <!-- item-->
-                    <a target="_blank" href="https://www.pikeadmin.com" class="dropdown-item notify-item">
-                        <p class="notify-details ml-0">
-                            <b>Do you want custom development to integrate this theme?</b>
-                            <span>Contact Us</span>
-                        </p>
-                    </a>
-
-                </div>
-            </li>
-
-            <li class="list-inline-item dropdown notif">
-                <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                     <i class="fa fa-fw fa-envelope-o"></i><span class="notif-bullet"></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-arrow-success dropdown-lg">
                     <!-- item-->
                     <div class="dropdown-item noti-title">
-                        <h5><small><span class="label label-danger pull-xs-right">12</span>Contact Messages</small></h5>
+                        <h5><small><span class="label label-danger pull-xs-right">12</span>Messages</small></h5>
                     </div>
 
                     <!-- item-->
                     <a href="#" class="dropdown-item notify-item">
                         <p class="notify-details ml-0">
-                            <b>Jokn Doe</b>
                             <span>Nouveau message</span>
-                            <small class="text-muted">2 minutes ago</small>
                         </p>
                     </a>
 
@@ -60,20 +35,16 @@
                     <i class="fa fa-fw fa-bell-o"></i><span class="notif-bullet"></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-lg">
-                    <!-- item-->
                     <div class="dropdown-item noti-title">
-                        <h5><small><span class="label label-danger pull-xs-right">5</span>Allerts</small></h5>
+                        <h5><small><span class="label label-danger pull-xs-right">5</span>Notification</small></h5>
                     </div>
 
-                    <!-- item-->
                     <a href="#" class="dropdown-item notify-item">
                         <div class="notify-icon bg-faded">
-                            <img src="assets/images/avatars/avatar2.png" alt="img" class="rounded-circle img-fluid">
+                            <img src="../assets/images/avatars/avatar2.png" alt="img" class="rounded-circle img-fluid">
                         </div>
                         <p class="notify-details">
-                            <b>John Doe</b>
-                            <span>User registration</span>
-                            <small class="text-muted">3 minutes ago</small>
+                            <span>nouvel utilisateur</span>
                         </p>
                     </a>
                 </div>
@@ -81,20 +52,17 @@
 
             <li class="list-inline-item dropdown notif">
                 <a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <img src="assets/images/avatars/admin.png" alt="Profile image" class="avatar-rounded">
+                    <img src="../assets/images/avatars/admin.png" alt="Profile image" class="avatar-rounded">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
-                    <!-- item-->
                     <div class="dropdown-item noti-title">
                         <h5 class="text-overflow"><small>Bonjour, admin</small> </h5>
                     </div>
 
-                    <!-- item-->
-                    <a href="pro-profile.html" class="dropdown-item notify-item">
+                    <a href="#" class="dropdown-item notify-item">
                         <i class="fa fa-user"></i> <span>Profile</span>
                     </a>
 
-                    <!-- item-->
                     <a href="#" class="dropdown-item notify-item">
                         <i class="fa fa-power-off"></i> <span>Déconnexion</span>
                     </a>
@@ -126,15 +94,15 @@
             <ul>
 
                 <li class="submenu">
-                    <a class="active" href="index.php"><i class="fa fa-fw fa-bars"></i><span> Administration </span> </a>
+                    <a class="active" href="../index.php"><i class="fa fa-fw fa-bars"></i><span> Administration </span> </a>
                 </li>
 
                 <li class="submenu">
                     <a class="pro" href="#"><i class="fa fa-fw fa-star"></i><span> Gestion utilisateur </span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled">
-                        <li><a href="pro-profile.php">Mon Profile</a></li>
-                        <li><a href="pro-users.php">Utilisateurs</a></li>
-                        <li><a href="create-user.php">Creer un Utilisateur</a></li>
+                        <li><a href="../pages/pro-profile.php">Mon Profile</a></li>
+                        <li><a href="../pages/pro-users.php">Utilisateurs</a></li>
+                        <li><a href="../pages/pro-users-create.php">Creer un Utilisateur</a></li>
                     </ul>
                 </li>
 
@@ -149,6 +117,3 @@
     </div>
 
 </div>
-<!-- End Sidebar -->
-
-<!-- End Navigation -->
