@@ -37,6 +37,7 @@
     } );
 </script>
 
+
 <script>
     var ctx1 = document.getElementById("lineChart").getContext('2d');
     var lineChart = new Chart(ctx1, {

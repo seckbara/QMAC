@@ -10,42 +10,56 @@ use Doctrine\ORM\Mapping as ORM;
 class Utilisateurs implements \InterfaceUsers
 {
     /**
-     * @Id
-     * @GeneratedValue
-     * @@ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue
+     * @ORM\Column(type="integer")
      */
     private $id;
 
     /**
-     * @@ORM\Column(type="string")
+     * @@RM\Column(type="string")
      */
     private $nom;
 
     /**
-     * @@ORM\Column(type="string")
+     * @ORM\Column(type="string")
      */
     private $prenom;
 
     /**
-     * @@ORM\Column(type="string")
+     * @ORM\Column(type="string")
      */
     private $fonction;
 
     /**
-     * @@ORM\Column(type="string")
+     * @ORM\Column(type="string")
      */
     private $role;
 
     /**
-     * @@ORM\Column(type="string")
+     * @ORM\Column(type="date")
      */
     private $dateinsciprtion;
 
     /**
-     * @@ORM\Column(type="date")
+     * @ORM\Column(type="string")
      */
     private $sexe;
 
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $email;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $password;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $cpassword;
     /**
      * @return mixed
      */
@@ -157,6 +171,56 @@ class Utilisateurs implements \InterfaceUsers
     {
         $this->sexe = $sexe;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * @param mixed $password
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCpassword()
+    {
+        return $this->cpassword;
+    }
+
+    /**
+     * @param mixed $cpassword
+     */
+    public function setCpassword($cpassword)
+    {
+        $this->cpassword = $cpassword;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param mixed $email
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+
 
     public function __toString()
     {

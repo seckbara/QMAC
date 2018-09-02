@@ -134,6 +134,7 @@
                     <ul class="list-unstyled">
                         <li><a href="pro-profile.php">Mon Profile</a></li>
                         <li><a href="pro-users.php">Utilisateurs</a></li>
+                        <li><a href="create-user.php">Creer un Utilisateur</a></li>
                     </ul>
                 </li>
 
