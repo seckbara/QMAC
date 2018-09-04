@@ -98,10 +98,10 @@
                 </li>
 
                 <li class="submenu">
-                    <a class="pro" href="#"><i class="fa fa-fw fa-star"></i><span> Gestion utilisateur </span> <span class="menu-arrow"></span></a>
+                    <a class="pro active" href="#"><i class="fa fa-fw fa-star"></i><span> Gestion utilisateur </span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled">
                         <li><a href="../pages/pro-profile.php">Mon Profile</a></li>
-                        <li><a href="../pages/pro-users.php">Utilisateurs</a></li>
+                        <li><a href="../pages/pro-users.php" >Utilisateurs</a></li>
                         <li><a href="../pages/pro-users-create.php">Creer un Utilisateur</a></li>
                     </ul>
                 </li>
