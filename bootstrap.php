@@ -20,7 +20,7 @@ $dbparams = [
     'host' => "localhost",
     'charset' => "utf8",
     'user' => "root",
-    'password' => "",
+    'password' => "mamadou",
     'dbname' => "gestionutilisateur"
 ];
 

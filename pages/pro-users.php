@@ -1,4 +1,12 @@
-<?php include "../assets/include/header.php"; ?>
+<?php
+include "../assets/include/header.php";
+$entitymanager  = require_once join(DIRECTORY_SEPARATOR, [__DIR__, '../bootstrap.php']);
+use GestionUser\Entity\Utilisateurs;
+
+// Recuperation du depos des utilisateurs
+$reporitoryUsers = $entitymanager->getRepository(Utilisateurs::class);
+$users = $reporitoryUsers->findAll();
+?>
 
 <div id="main">
             <?php include "../assets/include/nav.php"; ?>
@@ -42,16 +50,21 @@
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                            <tr>
-                                                                <td>Tiger Nixon</td>
-                                                                <td>System Architect</td>
-                                                                <td>Edinburgh</td>
-                                                                <td>61</td>
-                                                                <td>2011/04/25</td>
-                                                                <td>$320,800</td>
-                                                                <td>$320,800</td>
-                                                                <td>$320,800</td>
-                                                            </tr>
+                                                            <?php foreach ($users as $user):  ?>
+                                                                <tr>
+                                                                    <td><?= $user->nom ?></td>
+                                                                    <td><?= $user->prenom ?></td>
+                                                                    <td><?= $user->email ?></td>
+                                                                    <td><?= $user->role ?></td>
+                                                                    <td><?= $user->sexe ?></td>
+                                                                    <td><?= $user->fonction ?></td>
+                                                                    <td><?= $user->dateinsciprtion ?></td>
+                                                                    <td align="center">
+                                                                        <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal_edit_user_5"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                                        <a href="javascript:deleteRecord_5('5');" class="btn btn-danger btn-sm" data-placement="top" data-toggle="tooltip" data-title="Delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                                                    </td>
+                                                                </tr>
+                                                            <?php endforeach; ?>
                                                             </tbody>
                                                         </table>
                                                     </div>

@@ -14,52 +14,52 @@ class Utilisateurs implements InterfaceUsers
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
-
-    /**
-     * @@RM\Column(type="string")
-     */
-    private $nom;
+    public $id;
 
     /**
      * @ORM\Column(type="string")
      */
-    private $prenom;
+    public $nom;
 
     /**
      * @ORM\Column(type="string")
      */
-    private $fonction;
+    public $prenom;
 
     /**
      * @ORM\Column(type="string")
      */
-    private $role;
+    public $fonction;
 
     /**
      * @ORM\Column(type="string")
      */
-    private $dateinsciprtion;
+    public $role;
 
     /**
      * @ORM\Column(type="string")
      */
-    private $sexe;
+    public $dateinsciprtion;
 
     /**
      * @ORM\Column(type="string")
      */
-    private $email;
+    public $sexe;
 
     /**
      * @ORM\Column(type="string")
      */
-    private $password;
+    public $email;
 
     /**
      * @ORM\Column(type="string")
      */
-    private $cpassword;
+    public $password;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    public $cpassword;
     /**
      * @return mixed
      */
