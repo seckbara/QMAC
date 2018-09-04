@@ -14,12 +14,13 @@ $proxyDir = null;
 $cache = null;
 $useSimpleAnnotationreader = false;
 
+// Paramettrage de la connexion
 $dbparams = [
     'driver' => "pdo_mysql",
     'host' => "localhost",
     'charset' => "utf8",
     'user' => "root",
-    'password' => "mamadou",
+    'password' => "",
     'dbname' => "gestionutilisateur"
 ];
 

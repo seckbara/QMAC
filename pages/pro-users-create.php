@@ -2,7 +2,6 @@
 <?php include "../assets/include/header.php"; ?>
 
 <div id="main">
-
     <?php include "../assets/include/nav.php"; ?>
         <div class="content-page">
 
@@ -17,7 +16,7 @@
                             <h1 class="main-title float-left">Creation d'un utilisateur</h1>
                             <ol class="breadcrumb float-right">
                                 <li class="breadcrumb-item">Accueil</li>
-                                <li class="breadcrumb-item active">Profile</li>
+                                <li class="breadcrumb-item active">Création</li>
                             </ol>
                             <div class="clearfix"></div>
                         </div>
@@ -46,14 +45,14 @@
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>Nom d'utilisateur</label>
-                                                        <input class="form-control" id="user-nom" name="nom" type="text" value="" required />
+                                                        <input class="form-control" id="user-nom" placeholder="nom utilisateur" name="nom" type="text" value="" required />
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>Prénom d'utilisateur</label>
-                                                        <input class="form-control" id="user-prenom" name="prenom" type="text" required />
+                                                        <input class="form-control" id="user-prenom" placeholder="prenom utilisateur" name="prenom" type="text" required />
                                                     </div>
                                                 </div>
                                             </div>
@@ -62,7 +61,7 @@
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>Email</label>
-                                                        <input class="form-control" id="id-email" name="email" type="email" value="" />
+                                                        <input class="form-control" id="id-email" placeholder="adresse email" name="email" type="email" value="" />
                                                     </div>
                                                 </div>
 
@@ -102,14 +101,14 @@
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>Mots de passe</label>
-                                                        <input class="form-control" id="id-password" name="password" type="password" value="" />
+                                                        <input class="form-control" id="id-password" placeholder="mots de passe" name="password" type="password" value="" />
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>Confirmation mots de passe</label>
-                                                        <input class="form-control" id="id-cpassword" name="cpassword" type="password" />
+                                                        <input class="form-control" id="id-cpassword" placeholder="confirmation" name="cpassword" type="password" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -130,7 +129,7 @@
 
                                             <div class="row">
                                                 <div class="col-lg-12">
-                                                    <button type="button" id="id-enregistrer" class="btn btn-primary">Enregistrer</button>
+                                                    <input type="submit" id="id-enregistrer" value="Enregistrer" class="btn btn-primary"></input>
                                                 </div>
                                             </div>
 
@@ -158,8 +157,9 @@
 
 <?php include "../assets/include/script.php"; ?>
 <script>
-
-    $("#id-enregistrer" ).click(function() {
+    // Enregistrement du formulaire via du JQUERY
+    $("form").submit(function(e) {
+        e.preventDefault();
         $.post( "../src/Traitement/create-user-form.php", $("#create-user").serialize(), function (data) {
             if(data['result'] === "succes"){
                 $("#succes").html(" L'utilisateur a été créer avec succé").show();
@@ -173,6 +173,7 @@
         }, 'json');
     });
 
+    // Utilisation de date picker pour la date d'inscription
     $('input[name="date"]').daterangepicker({
         singleDatePicker: true,
         showDropdowns: true,
