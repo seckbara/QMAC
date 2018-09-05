@@ -28,6 +28,9 @@
 
         <!-- Select2 -->
         <link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"/>
+
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+
 </head>
 <body class="adminbody">
 

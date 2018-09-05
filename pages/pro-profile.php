@@ -1,7 +1,6 @@
         <?php include "../assets/include/header.php"; ?>
 
         <div id="main">
-
             <?php include "../assets/include/nav.php"; ?>
                 <div class="content-page">
                     <div class="content">
