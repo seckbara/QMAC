@@ -74,7 +74,9 @@ $users = $reporitoryUsers->findAll();
                                                 <td><?= $user->fonction ?></td>
                                                 <td><?= $user->dateinsciprtion ?></td>
                                                 <td align="center">
-                                                    <a role="button" href="#" class="btn btn-success btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg" onclick="add_adresse(<?= $user->id ?>);"><i class="fa fa-address-card" aria-hidden="true"></i></a>
+                                                    <?php if (is_null($user->adresse_id)) : ?>
+                                                        <a role="button" href="#" class="btn btn-success btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg" onclick="add_adresse(<?= $user->id ?>);"><i class="fa fa-address-card" aria-hidden="true"></i></a>
+                                                    <?php endif; ?>
                                                     <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal_edit_user_5"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                                                     <a href="" class="btn btn-danger btn-sm" data-placement="top" data-toggle="tooltip" data-title="Delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
                                                 </td>
@@ -97,5 +99,17 @@ $users = $reporitoryUsers->findAll();
 
 <?php include "../assets/include/script.php"; ?>
 <script src="../assets/js/traitement.js"></script>
+
+<script>
+    // Fonction pour afficher le modal
+    function add_adresse(adher)
+    {
+        var url 	= "../pages/modals/add_adresse.php";
+        var data = {
+            id_adher: adher
+        };
+        ajaxModaltoShow(data, url, 'adresse');
+    }
+</script>
 
 

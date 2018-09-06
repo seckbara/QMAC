@@ -25,8 +25,8 @@
 <script src="../assets/plugins/counterup/jquery.counterup.min.js"></script>
 <script src="../assets/plugins/datetimepicker/js/daterangepicker.js"></script>
 <script src="../assets/plugins/select2/js/select2.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDE1wSrKQyxScmZJ2zYApjkwqVrMxXtg90&libraries=places&callback=initAutocomplete"
-        async defer></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDE1wSrKQyxScmZJ2zYApjkwqVrMxXtg90&libraries=places&callback=initAutocomplete"
+        async defer></script>-->
 
 
 
@@ -176,7 +176,7 @@
 
     });
 </script>
-<script>
+<!--<script>
 
     var placeSearch, autocomplete;
     var componentForm = {
@@ -237,7 +237,7 @@
             });
         }
     }
-</script>
+</script>-->
 
 </body>
 </html>

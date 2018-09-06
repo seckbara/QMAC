@@ -20,15 +20,13 @@ $user->setFonction($_POST['fonction']);
 $entitymanager->persist($user);
 
 // Vérification si les mots de passe sont identique
-if($_POST['password'] == $_POST['cpassword']){
+if ($_POST['password'] == $_POST['cpassword']) {
     $entitymanager->flush();
     $result['result'] = 'succes';
     echo json_encode($result);
     exit();
-}
-else{
+} else {
     $result['result'] = 'echec';
     echo json_encode($result);
     exit();
 }
-

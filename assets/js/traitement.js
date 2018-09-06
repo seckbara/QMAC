@@ -21,14 +21,3 @@ function ajaxModaltoShow(data, url, idModal) {
     });
 };
 
-
-// Fonction pour afficher le modal
-function add_adresse(adher)
-{
-    console.log(adher);
-    var url 	= "../pages/scripts/add_adresse.php";
-    var data = {
-        id_adher: adher
-    };
-    ajaxModaltoShow(data, url, 'adresse');
-}

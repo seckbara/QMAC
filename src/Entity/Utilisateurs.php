@@ -1,8 +1,10 @@
 <?php
 
 namespace GestionUser\Entity;
+
 use Doctrine\ORM\Mapping as ORM;
 use GestionUser\Entity\InterfaceUsers;
+
 /**
  * @ORM\Entity
  * @ORM\Table(name="utilisateurs")
@@ -60,6 +62,12 @@ class Utilisateurs implements InterfaceUsers
      * @ORM\Column(type="string")
      */
     public $cpassword;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Adresses::class, cascade={"persist", "remove"})
+     */
+    public $adresse_id;
+
     /**
      * @return mixed
      */
@@ -220,12 +228,29 @@ class Utilisateurs implements InterfaceUsers
         $this->email = $email;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getAdresseId()
+    {
+        return $this->adresse_id;
+    }
+
+    /**
+     * @param mixed $adresse_id
+     */
+    public function setAdresseId($adresse_id)
+    {
+        $this->adresse_id = $adresse_id;
+    }
 
 
+    /**
+     * @return mixed|string
+     */
     public function __toString()
     {
         $format = "Utilisateur: (Identifiant : %s, nom : %s, prenom : %s, date d'inscription, %s)";
         return sprintf($format, $this->getId(), $this->getNom(), $this->getPrenom(), $this->dateinsciprtion);
     }
-
 }

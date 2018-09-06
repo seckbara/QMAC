@@ -1,6 +1,8 @@
 <?php
 namespace GestionUser\Entity;
-Interface InterfaceUsers {
+
+interface InterfaceUsers
+{
     /**
      * @return mixed
      */
